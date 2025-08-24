@@ -1,0 +1,44 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = MwBcb30 BioLife BufTst ChatCli ChatSrv CliTst SrvTst SvrDemo TblTst
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+BioLife: BioLife.bpr
+  $(MAKE)
+
+BufTst: BufTst.bpr
+  $(MAKE)
+
+ChatCli: ChatCli.bpr
+  $(MAKE)
+
+ChatSrv: ChatSrv.bpr
+  $(MAKE)
+
+CliTst: CliTst.bpr
+  $(MAKE)
+
+SrvTst: SrvTst.bpr
+  $(MAKE)
+
+TblTst: TblTst.bpr
+  $(MAKE)
+
+MwBcb30: ..\..\..\Delphi\VC32\MwBcb30.bpk
+  $(MAKE)
+
+SvrDemo: SvrDemo.bpr
+  $(MAKE)
+
+

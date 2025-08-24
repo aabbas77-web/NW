@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="NW_Server.exe"/>
+    <OBJFILES value="NW_Server.obj Main.obj DataModule.obj ..\Lib\nw_Messages.obj 
+      ..\Lib\Splash.obj ..\Lib\Group.obj ..\Lib\nw_Input.obj 
+      ..\Lib\nw_Compression.obj ..\..\..\Lib\Protection\skeydrv.obj 
+      ..\Lib\Protection\ProtectionLib.obj ..\ML\Lib\ML.obj 
+      ..\ML\Lib\ML_DataModule.obj"/>
+    <RESFILES value="NW_Server.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm DataModule.dfm ..\Lib\nw_Messages.dfm 
+      ..\Lib\Splash.dfm ..\Lib\Group.dfm ..\Lib\nw_Input.dfm 
+      ..\ML\Lib\ML_DataModule.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="FormTranslation6.lib adortl.lib SingleAppInstance.lib IcsBcb60.lib 
+      MwBcb60.lib qrpt.lib bdertl.lib vcldb.lib dsnap.lib dsnapcon.lib 
+      xmlrtl.lib dbrtl.lib inetdb.lib webdsnap.lib inet.lib
+      bcbsmp.lib vclx.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib bcbsmp.lib inet.lib 
+      webdsnap.lib inetdb.lib dbrtl.lib xmlrtl.lib dsnapcon.lib dsnap.lib 
+      vcldb.lib bdertl.lib qrpt.lib MwBcb60.lib IcsBcb60.lib 
+      SingleAppInstance.lib adortl.lib FormTranslation6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi IcsBcb60.bpi MwBcb60.bpi 
+      bcbshlctrls.bpi SingleAppInstance.bpi ACM6PK.bpi"/>
+    <PATHCPP value=".;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib\Protection;..\ML\Lib;..\ML\Lib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_NETWATCHER_;_PROTECTED_"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="NW_Server.cpp"/>
+    <INCLUDEPATH value="..\ML\Lib;..\Lib\Protection;..\..\..\Lib\Protection;..\..\ML\Lib;\..\Lib\Protection;..\Lib;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;..\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\TFormTranslation;..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32"/>
+    <LIBPATH value="..\ML\Lib;..\Lib\Protection;..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\ML\Lib -I..\Lib\Protection -I..\..\..\Lib\Protection -I..\..\ML\Lib 
+      -I\..\Lib\Protection -I..\Lib 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -IE:\Ali\Library\Programs\NW\Server -I$(BCB)\include -I$(BCB)\include\vcl 
+      -IE:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32 
+      -IE:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32 
+      -IE:\Ali\Library\Packages\SingleInst 
+      -IE:\Ali\Library\Packages\TFormTranslation -I..\Packages\SingleInst 
+      -IE:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32 
+      -IE:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32 
+      -I..\Packages\TFormTranslation 
+      -I..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32 
+      -I..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32 
+      -src_suffix cpp -D_NETWATCHER_ -D_PROTECTED_ -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="NW_Server.res" FORMNAME="" UNITNAME="NW_Server.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NW_Server.cpp" FORMNAME="" UNITNAME="NW_Server" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="FormMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DataModule.cpp" FORMNAME="DM" UNITNAME="DataModule" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Messages.cpp" FORMNAME="FormMessages" UNITNAME="nw_Messages" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\Splash.cpp" FORMNAME="FormSplash" UNITNAME="Splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\Group.cpp" FORMNAME="FormGroup" UNITNAME="Group" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Input.cpp" FORMNAME="Formnw_Input" UNITNAME="nw_Input" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Compression.cpp" FORMNAME="" UNITNAME="nw_Compression" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\..\Lib\Protection\skeydrv.obj" FORMNAME="" UNITNAME="skeydrv.obj" CONTAINERID="OBJTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\Protection\ProtectionLib.cpp" FORMNAME="" UNITNAME="ProtectionLib" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ML\Lib\ML.cpp" FORMNAME="" UNITNAME="ML" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ML\Lib\ML_DataModule.cpp" FORMNAME="DM_ML" UNITNAME="ML_DataModule" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=10241
+CodePage=1256
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=14
+Item0=..\..\ML\Lib;\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;..\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\TFormTranslation;..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item1=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;..\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\TFormTranslation;..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item2=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;..\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Net\Ali\Library\Packages\TFormTranslation;..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item3=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Net\Ali\Library\Packages\TFormTranslation;..\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;..\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item4=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\SingleInst;E:\Ali\Net\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Net\Ali\Library\Packages\TFormTranslation
+Item5=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation
+Item6=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;E:\Ali\Library\Programs\ML\Lib
+Item7=..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation;E:\Ali\Library\Programs\ML\Lib
+Item8=..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation
+Item9=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst;E:\Ali\Library\Packages\TFormTranslation
+Item10=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32;E:\Ali\Library\Packages\SingleInst
+Item11=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\Delphi\vc32
+Item12=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item13=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\ML\Lib;..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\Library\Programs\ML\Lib
+Item2=..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\Library\Programs\ML\Lib
+Item3=..\..\..\Lib\Protection;..\Lib;C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=C:\Program Files\Borland\CBuilder6\Projects;E:\Ali\Library\Programs\NW\Server;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=10
+Item0=_NETWATCHER_;_PROTECTED_
+Item1=_ALL_;_PROTECTED_
+Item2=_NETWATCHER_;_DEMO_
+Item3=_NETWATCHER_
+Item4=_ALL_;_DEMO_
+Item5=_ALL_;_DEMO_;_DEBUG
+Item6=_NETWATCHER_;_TEST_
+Item7=_NETWATCHER_;_DEMO_;_DEBUG
+Item8=_NETWATCHER_;_TEST_;_DEBUG
+Item9=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,45 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+//---------------------------------------------------------------------------
+USEFORM("Main.cpp", FormMain);
+USEFORM("DataModule.cpp", DM); /* TDataModule: File Type */
+USEFORM("..\Lib\nw_Messages.cpp", FormMessages);
+USEFORM("..\..\ML\Lib\ML_DataModule.cpp", DM_ML); /* TDataModule: File Type */
+USEFORM("..\Lib\Splash.cpp", FormSplash);
+USEFORM("..\Lib\Group.cpp", FormGroup);
+USEFORM("..\Lib\nw_Input.cpp", Formnw_Input);
+//---------------------------------------------------------------------------
+WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
+{
+	try
+	{
+		Application->Initialize();
+		Application->CreateForm(__classid(TDM), &DM);
+		Application->CreateForm(__classid(TDM_ML), &DM_ML);
+		Application->CreateForm(__classid(TFormMain), &FormMain);
+		Application->CreateForm(__classid(TFormMessages), &FormMessages);
+		Application->CreateForm(__classid(TFormSplash), &FormSplash);
+		Application->CreateForm(__classid(TFormGroup), &FormGroup);
+		Application->CreateForm(__classid(TFormnw_Input), &Formnw_Input);
+		Application->Run();
+	}
+	catch (Exception &exception)
+	{
+		Application->ShowException(&exception);
+	}
+	catch (...)
+	{
+		try
+		{
+			throw Exception("");
+		}
+		catch (Exception &exception)
+		{
+			Application->ShowException(&exception);
+		}
+	}
+	return 0;
+}
+//---------------------------------------------------------------------------

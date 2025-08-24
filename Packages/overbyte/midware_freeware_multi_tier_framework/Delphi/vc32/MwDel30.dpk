@@ -1,0 +1,55 @@
+package MwDel30;
+
+{$R *.RES}
+{$R 'RFormat.dcr'}
+{$R 'ApServer.dcr'}
+{$R 'RBroker.dcr'}
+{$R 'ApsCli.dcr'}
+{$R 'ApSrvCli.dcr'}
+{$R 'MWDatSet.dcr'}
+{$R 'TrackDS.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'MidWare (Middleware by F. Piette)'}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl30,
+  VCLDB30,
+  VCLX30;
+
+contains
+  RFormat,
+  ApServer,
+  ApSrvCli,
+  RBroker,
+  ApsCli,
+  MWDatSet,
+  TrackDS,
+  LOProp,
+  LOPropIm,
+  PrmProp,
+  SObjThrd,
+  SObjSQL,
+  SrvObj1;
+
+end.

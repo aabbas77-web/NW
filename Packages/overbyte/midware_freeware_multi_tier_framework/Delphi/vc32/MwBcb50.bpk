@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="MwBcb50.bpl"/>
+    <OBJFILES value="RFormat.obj RBroker.obj ApSrvCli.obj ApServer.obj ApsCli.obj MWDatSet.obj 
+      LOPropIm.obj LOProp.obj MwBcb50.obj ..\..\cpp\MidWare\SObjSQL.obj 
+      ..\..\cpp\MidWare\SObjThrd.obj ..\..\cpp\MidWare\SrvObj5.obj 
+      ..\..\cpp\MidWare\SrvObj2.obj ..\..\cpp\MidWare\SrvObj3.obj 
+      ..\..\cpp\MidWare\SrvObj4.obj ..\..\cpp\MidWare\SrvObj1.obj"/>
+    <RESFILES value="MwBcb50.res RFormat.dcr RBroker.dcr ApSrvCli.dcr ApServer.dcr ApsCli.dcr 
+      MWDatSet.dcr"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) LOPropIm.dfm LOProp.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="dss50.lib tee50.lib teedb50.lib teeui50.lib qrpt50.lib vcldbx50.lib 
+      ibsmp50.lib bcbsmp50.lib vclmid50.lib vcljpg50.lib"/>
+    <SPARELIBS value="vcl50.lib vclx50.lib vcljpg50.lib vclmid50.lib vcldb50.lib vclbde50.lib 
+      bcbsmp50.lib ibsmp50.lib vcldbx50.lib qrpt50.lib teeui50.lib teedb50.lib 
+      tee50.lib dss50.lib IcsBcb50.lib"/>
+    <PACKAGES value="vcl50.bpi vcldb50.bpi vclbde50.bpi vclx50.bpi IcsBcb50.bpi"/>
+    <PATHCPP value=".;..\..\cpp\MidWare"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;_VIS_NOLIB;USEPACKAGES"/>
+    <MAINSOURCE value="MwBcb50.cpp"/>
+    <INCLUDEPATH value="..\..\cpp\MidWare;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\..\cpp\MidWare;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Source\ToolsAPI"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\..\cpp\MidWare -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp 
+      -boa"/>
+    <CFLAG1 value="-Od -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;Midware Multi-Tier framework for BCB4&quot; -aa -Tpp -x -Gn -Gl -Gi -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=2
+MinorVer=0
+Release=0
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1036
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=OverByte
+FileDescription=Midware multi-tier framework
+FileVersion=2.0.0.1
+InternalName=MwBcb40
+LegalCopyright=(c) by François Piette
+LegalTrademarks=Midware
+OriginalFilename=
+ProductName=Midware
+ProductVersion=2.0.0.0
+Comments=http://www.rtfm.be/fpiette/indexuk.htm
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\..\cpp\MidWare;$(BCB)\include;$(BCB)\include\vcl
+Item1=d:\fpiette\delphi\vc32;..\..\cpp\MidWare;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\cpp\MidWare;$(BCB)\include;$(BCB)\include\vcl;d:\fpiette\delphi\vc32
+Item3=..\..\Delphi\vc32;..\..\cpp\MidWare;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=5
+Item0=..\..\cpp\MidWare;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Source\ToolsAPI
+Item1=..\..\cpp\MidWare;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=d:\fpiette\delphi\vc32;..\..\cpp\MidWare;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\..\Delphi\vc32;..\..\cpp\MidWare;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="ChatCli.exe"/>
+    <OBJFILES value="ChatCli.obj ..\ChatCli1.obj"/>
+    <RESFILES value="ChatCli.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) ..\ChatCli1.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="IcsBcb50.lib MwBcb50.lib vclx50.lib vclbde50.lib 
+      vcldb50.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib vcldb50.lib vclbde50.lib vclx50.lib 
+      MwBcb50.lib IcsBcb50.lib"/>
+    <PACKAGES value="vclx50.bpi vcl50.bpi vcldb50.bpi vclbde50.bpi vcldbx50.bpi bcbsmp50.bpi 
+      dclocx50.bpi qrpt50.bpi teeui50.bpi vclsmp50.bpi teedb50.bpi tee50.bpi 
+      ibsmp50.bpi nmfast50.bpi inetdb50.bpi inet50.bpi"/>
+    <PATHCPP value=".;..\..\MidWare"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_VIS_NOLIB"/>
+    <MAINSOURCE value="ChatCli.cpp"/>
+    <INCLUDEPATH value="..\;..\..\MidWare;..;..\..\..\Delphi\vc32;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;..\;..\..\MidWare;..;..\..\..\Delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-src_suffix cpp -I..\. -I..\..\MidWare -I.. -I..\..\..\Delphi\vc32 
+      -I$(BCB)\include -I$(BCB)\include\vcl -boa"/>
+    <CFLAG1 value="-Od -Vx -Ve -Tkh30000 -X- -r- -a8 -b- -k -y -v -vi- -c -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -v -M -JPHNE"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2060
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\;..\..\MidWare;..\..\..\Delphi\vc32;..;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\..\Delphi\vc32;..\..\midware;..;$(BCB)\include;$(BCB)\include\vcl
+Item2=..\..\delphi\vc32;..\..\cpp;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item4=..\..\internet;..;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=..\;..\..\MidWare;..\..\..\Delphi\vc32;..;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\..\Delphi\vc32;..\..\midware;..;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\delphi\vc32;..\..\cpp;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=2
+Item0=_RTLDLL
+Item1=_RTLDLL;USEPACKAGES
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

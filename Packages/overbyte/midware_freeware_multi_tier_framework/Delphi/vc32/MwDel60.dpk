@@ -1,0 +1,57 @@
+package MwDel60;
+
+{$R *.res}
+{$R 'ApServer.dcr'}
+{$R 'ApSrvCli.dcr'}
+{$R 'ApsCli.dcr'}
+{$R 'RBroker.dcr'}
+{$R 'RFormat.dcr'}
+{$R 'MWDatSet.dcr'}
+{$R 'TrackDs.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'MidWare (Middleware by F. Piette)'}
+{$IMPLICITBUILD ON}
+
+requires
+  IcsDel60,
+  vclx,
+  dbrtl,
+  bdertl,
+  designide;
+
+contains
+  ApServer in 'ApServer.pas',
+  ApSrvCli in 'ApSrvCli.pas',
+  ApsCli in 'ApsCli.pas',
+  RBroker in 'RBroker.pas',
+  RFormat in 'RFormat.pas',
+  MWDatSet in 'MwDatSet.pas',
+  SrvObj1 in '..\MidWare\SrvObj1.pas',
+  SObjThrd in '..\MidWare\SObjThrd.pas',
+  SObjSQL in '..\MidWare\SObjSql.pas',
+  PrmProp in 'PrmProp.pas',
+  LOPropIm in 'LOPropIm.pas' {ImportForm},
+  LOProp in 'LOProp.pas' {LayoutEditForm},
+  TrackDs in 'TrackDs.pas';
+
+end.

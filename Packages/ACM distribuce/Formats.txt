@@ -1,0 +1,72 @@
+*************************************************
+Format: PCM
+Attributes: 8.000 kHz; 8 Bit; Mono	7 kb/sec
+-------------------------------------------------
+wFormatTag: 1
+nChannels: 1
+nSamplesPerSec: 8000
+nAvgBytesPerSec: 8000
+nBlockAlign: 1
+wBitsPerSample: 8
+cbSize: 18964
+
+*************************************************
+Format: PCM
+Attributes: 8.000 kHz; 8 Bit; Stereo	15 kb/sec
+-------------------------------------------------
+wFormatTag: 1
+nChannels: 2
+nSamplesPerSec: 8000
+nAvgBytesPerSec: 16000
+nBlockAlign: 2
+wBitsPerSample: 8
+cbSize: 18964
+
+*************************************************
+Format: PCM
+Attributes: 11.025 kHz; 8 Bit; Mono	10 kb/sec
+-------------------------------------------------
+wFormatTag: 1
+nChannels: 1
+nSamplesPerSec: 11025
+nAvgBytesPerSec: 11025
+nBlockAlign: 1
+wBitsPerSample: 8
+cbSize: 18964
+
+*************************************************
+Format: GSM 6.10
+Attributes: 8.000 kHz; Mono	1 kb/sec
+-------------------------------------------------
+wFormatTag: 49
+nChannels: 1
+nSamplesPerSec: 8000
+nAvgBytesPerSec: 1625
+nBlockAlign: 65
+wBitsPerSample: 0
+cbSize: 2
+
+*************************************************
+Format: GSM 6.10
+Attributes: 11.025 kHz; Mono	2 kb/sec
+-------------------------------------------------
+wFormatTag: 49
+nChannels: 1
+nSamplesPerSec: 11025
+nAvgBytesPerSec: 2239
+nBlockAlign: 65
+wBitsPerSample: 0
+cbSize: 2
+
+*************************************************
+Format: PCM
+Attributes: 32.000 kHz; 8 Bit; Mono	31 kb/sec
+-------------------------------------------------
+wFormatTag: 1
+nChannels: 1
+nSamplesPerSec: 32000
+nAvgBytesPerSec: 32000
+nBlockAlign: 1
+wBitsPerSample: 8
+cbSize: 65004
+*************************************************

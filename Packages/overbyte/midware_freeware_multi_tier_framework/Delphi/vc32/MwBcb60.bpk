@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="MwBcb60.bpl"/>
+    <OBJFILES value="MwBcb60.obj RFormat.obj ApServer.obj ApSrvCli.obj MWDatSet.obj RBroker.obj 
+      ApsCli.obj db.obj"/>
+    <RESFILES value="MwBcb60.res RFormat.dcr ApServer.dcr ApSrvCli.dcr MWDatSet.dcr RBroker.dcr 
+      ApsCli.dcr"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bcb2kaxserver.lib indy.lib soaprtl.lib dsnapcon.lib dsnapcrba.lib qrpt.lib 
+      ibxpress.lib adortl.lib nmfast.lib bcbie.lib dbexpress.lib 
+      inetdbxpress.lib inetdbbde.lib bcbsmp.lib teeqr.lib dclocx.lib dbxcds.lib 
+      bdecds.lib dss.lib tee.lib teedb.lib teeui.lib visualdbclx.lib vcldbx.lib 
+      bdertl.lib cds.lib vcldb.lib"/>
+    <SPARELIBS value="rtl.lib vcldb.lib cds.lib bdertl.lib vcldbx.lib visualdbclx.lib teeui.lib 
+      teedb.lib tee.lib dss.lib bdecds.lib dbxcds.lib dclocx.lib teeqr.lib 
+      IcsBcb60.lib bcbsmp.lib inetdbbde.lib inetdbxpress.lib dbexpress.lib 
+      bcbie.lib nmfast.lib adortl.lib ibxpress.lib qrpt.lib dsnapcrba.lib 
+      dsnapcon.lib soaprtl.lib indy.lib bcb2kaxserver.lib"/>
+    <PACKAGES value="designide.bpi rtl.bpi vcl.bpi dbrtl.bpi IcsBcb60.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
+    <MAINSOURCE value="MwBcb60.cpp"/>
+    <INCLUDEPATH value="$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Source\ToolsApi"/>
+    <LIBPATH value="$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\debug;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\Projects -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I$(BCB)\Source\ToolsApi -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpp -x -Gn -Gl -Gi -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MwBcb60.res" FORMNAME="" UNITNAME="MwBcb60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MwBcb60.cpp" FORMNAME="" UNITNAME="MwBcb60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RFormat.pas" FORMNAME="" UNITNAME="RFormat" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RFormat.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApServer.pas" FORMNAME="" UNITNAME="ApServer" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApServer.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApSrvCli.pas" FORMNAME="" UNITNAME="ApSrvCli" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApSrvCli.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MWDatSet.pas" FORMNAME="" UNITNAME="MwDatSet" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MWDatSet.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RBroker.pas" FORMNAME="" UNITNAME="RBroker" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RBroker.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApsCli.pas" FORMNAME="" UNITNAME="ApsCli" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ApsCli.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="G:\Program Files\Borland\CBuilder6\Lib\designide.bpi" FORMNAME="" UNITNAME="designide" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="G:\Program Files\Borland\CBuilder6\Lib\rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="G:\Program Files\Borland\CBuilder6\Lib\vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dbrtl.bpi" FORMNAME="" UNITNAME="dbrtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="db.pas" FORMNAME="" UNITNAME="DB" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IcsBcb60.bpi" FORMNAME="" UNITNAME="IcsBcb60" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2060
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=OverByte
+FileDescription=Midware multi-tier framework
+FileVersion=2.0.0.1
+InternalName=MwBcb60
+LegalCopyright=(c) by François Piette
+LegalTrademarks=Midware
+OriginalFilename=
+ProductName=Midware
+ProductVersion=2.0.0.0
+Comments=http://www.overbyte.be
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Source\ToolsApi
+Item1=$(BCB)\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=G:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\debug;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\Projects\Lib;$(BCB)\lib\debug;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item2=;;;;;;;;;;;;;;;;;;$(BCB)\Projects\Lib;$(BCB)\lib\debug;$(BCB)\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\Projects\Lib;g:\program files\borland\cbuilder6\lib\debug;G:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

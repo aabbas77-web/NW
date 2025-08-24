@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="MultiLanguage.exe"/>
+    <OBJFILES value="MultiLanguage.obj Main.obj Lib\ML.obj Splash.obj AddNewPhrase.obj 
+      Lib\ML_DataModule.obj Dictionary.obj"/>
+    <RESFILES value="MultiLanguage.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm Splash.dfm AddNewPhrase.dfm Lib\ML_DataModule.dfm 
+      Dictionary.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="qrpt.lib dsnap.lib dsnapcon.lib xmlrtl.lib inetdb.lib webdsnap.lib 
+      inet.lib FormTranslationPk.lib vcldb.lib vclx.lib bdertl.lib adortl.lib 
+      dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib adortl.lib bdertl.lib vclx.lib vcldb.lib 
+      FormTranslationPk.lib inet.lib webdsnap.lib inetdb.lib xmlrtl.lib 
+      dsnapcon.lib dsnap.lib qrpt.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;Lib;Lib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="MultiLanguage.cpp"/>
+    <INCLUDEPATH value="D:\Ali\Components\Translation\TFormTranslator;$(BCB)\LIB\lmd50\MAIN;Lib;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;..;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;D:\Ali\Components\Translation\TFormTranslator;$(BCB)\LIB\lmd50\MAIN;Lib;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;..;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-ID:\Ali\Components\Translation\TFormTranslator -I$(BCB)\LIB\lmd50\MAIN 
+      -ILib -I&quot;D:\Program Files\Borland\CBuilder6\Projects&quot; -I.. 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -S:0x1000000 -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="MultiLanguage.res" FORMNAME="" UNITNAME="MultiLanguage.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MultiLanguage.cpp" FORMNAME="" UNITNAME="MultiLanguage" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="FormMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\ML.cpp" FORMNAME="" UNITNAME="ML" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Splash.cpp" FORMNAME="FormSplash" UNITNAME="Splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AddNewPhrase.cpp" FORMNAME="FormAddNewPhrase" UNITNAME="AddNewPhrase" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Lib\ML_DataModule.cpp" FORMNAME="DM_ML" UNITNAME="ML_DataModule" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="Dictionary.cpp" FORMNAME="FormDictionary" UNITNAME="Dictionary" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=D:\Ali\Components\Translation\TFormTranslator;$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\Multi-Language\ML;..;Test;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=$(BCB)\Projects\Lib;D:\Ali\Components\Translation\TFormTranslator;$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\LIB\lmd50\MAIN;Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\Multi-Language\ML;..;Test;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

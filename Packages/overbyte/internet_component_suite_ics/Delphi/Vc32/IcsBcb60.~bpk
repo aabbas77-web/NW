@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="IcsBcb60.bpl"/>
+    <OBJFILES value="IcsBcb60.obj WSocketS.obj WSocket.obj wsockbuf.obj tnscript.obj emulvt.obj 
+      FingCli.obj FtpCli.obj FtpSrv.obj FtpSrvC.obj FtpSrvT.obj HttpProt.obj 
+      HttpSrv.obj icmp.obj MD5.obj mimedec.obj NntpCli.obj ping.obj Pop3Prot.obj 
+      SmtpProt.obj TnCnx.obj TnEmulVT.obj DnsQuery.obj"/>
+    <RESFILES value="IcsBcb60.res WSocketS.dcr wsocket.dcr tnscript.dcr emulvt.dcr FingCli.dcr 
+      FtpCli.dcr FtpSrv.dcr HttpProt.dcr HttpSrv.dcr mimedec.dcr NntpCli.dcr 
+      ping.dcr Pop3Prot.dcr SmtpProt.dcr TnCnx.dcr TnEmulVT.dcr DnsQuery.dcr"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="teeqr.lib qrpt.lib nmfast.lib ibxpress.lib soaprtl.lib dclocx.lib 
+      dbxcds.lib bdecds.lib inetdbxpress.lib inetdbbde.lib dss.lib tee.lib 
+      teedb.lib teeui.lib dbexpress.lib dsnapcon.lib dsnapcrba.lib 
+      visualdbclx.lib vcldbx.lib bdertl.lib cds.lib adortl.lib vcldb.lib indy.lib"/>
+    <SPARELIBS value="rtl.lib indy.lib vcldb.lib adortl.lib cds.lib bdertl.lib vcldbx.lib 
+      visualdbclx.lib dsnapcrba.lib dsnapcon.lib dbexpress.lib teeui.lib 
+      teedb.lib tee.lib dss.lib inetdbbde.lib inetdbxpress.lib bdecds.lib 
+      dbxcds.lib dclocx.lib soaprtl.lib ibxpress.lib nmfast.lib qrpt.lib teeqr.lib"/>
+    <PACKAGES value="rtl.bpi vcl.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
+    <MAINSOURCE value="IcsBcb60.cpp"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;E:\Ali\overbyte\internet_component_suite_ics\Delphi\Vc32"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\overbyte\internet_component_suite_ics\Delphi\Vc32"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl 
+      -IE:\Ali\overbyte\internet_component_suite_ics\Delphi\Vc32 -src_suffix cpp 
+      -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;ICS - Internet Component Suite for BCB6&quot; -aa -Tpp -x -Gn -Gl -Gi -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0pkg32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="IcsBcb60.res" FORMNAME="" UNITNAME="IcsBcb60.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="IcsBcb60.cpp" FORMNAME="" UNITNAME="IcsBcb60" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WSocketS.pas" FORMNAME="" UNITNAME="WSocketS" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WSocketS.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WSocket.pas" FORMNAME="" UNITNAME="WSocket" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wsocket.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wsockbuf.pas" FORMNAME="" UNITNAME="WSockBuf" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tnscript.pas" FORMNAME="" UNITNAME="TnScript" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tnscript.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="emulvt.pas" FORMNAME="" UNITNAME="EmulVT" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="emulvt.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FingCli.pas" FORMNAME="" UNITNAME="FingCli" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FingCli.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpCli.pas" FORMNAME="" UNITNAME="FtpCli" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpCli.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpSrv.pas" FORMNAME="" UNITNAME="FtpSrv" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpSrv.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpSrvC.pas" FORMNAME="" UNITNAME="FtpSrvC" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FtpSrvT.pas" FORMNAME="" UNITNAME="FtpSrvT" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HttpProt.pas" FORMNAME="" UNITNAME="HttpProt" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HttpProt.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HttpSrv.pas" FORMNAME="" UNITNAME="HttpSrv" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HttpSrv.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="icmp.pas" FORMNAME="" UNITNAME="Icmp" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="MD5.pas" FORMNAME="" UNITNAME="MD5" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mimedec.pas" FORMNAME="" UNITNAME="MimeDec" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="mimedec.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NntpCli.pas" FORMNAME="" UNITNAME="NntpCli" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NntpCli.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ping.pas" FORMNAME="" UNITNAME="Ping" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ping.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Pop3Prot.pas" FORMNAME="" UNITNAME="Pop3Prot" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Pop3Prot.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SmtpProt.pas" FORMNAME="" UNITNAME="SmtpProt" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="SmtpProt.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TnCnx.pas" FORMNAME="" UNITNAME="TnCnx" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TnCnx.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TnEmulVT.pas" FORMNAME="" UNITNAME="TnEmulVT" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TnEmulVT.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DnsQuery.pas" FORMNAME="" UNITNAME="DnsQuery" CONTAINERID="PascalCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DnsQuery.dcr" FORMNAME="" UNITNAME="" CONTAINERID="DcrTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="rtl.bpi" FORMNAME="" UNITNAME="rtl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="vcl.bpi" FORMNAME="" UNITNAME="vcl" CONTAINERID="BPITool" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=2
+MinorVer=1
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2060
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=OverByte (F. Piette)
+FileDescription=ICS Components for BCB6
+FileVersion=2.1.0.0
+InternalName=IcsBcb60
+LegalCopyright=(c) 1997-2002 by François PIETTE
+LegalTrademarks=
+OriginalFilename=
+ProductName=ICS
+ProductVersion=2.1.0.0
+Comments=http://www.overbyte.be
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=$(BCB)\include;$(BCB)\include\vcl;E:\Ali\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item1=G:\Program Files\Borland\CBuilder6\Projects;D:\Fpiette\Delphi\Vc32;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\overbyte\internet_component_suite_ics\Delphi\Vc32
+Item1=$(BCB)\Projects\Lib;g:\program files\borland\cbuilder6\lib\debug;G:\Program Files\Borland\CBuilder6\Projects;D:\Fpiette\Delphi\Vc32;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+
+[Linker]
+LibPrefix=
+LibSuffix=
+LibVersion=
+  </IDEOPTIONS>
+</PROJECT>

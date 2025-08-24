@@ -1,0 +1,51 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = IcsDel60.bpl MwDel60.bpl BioLife.exe BufTst.exe ChatCli.exe \
+  ChatSrv.exe CliTst.exe SrvDemo.exe SrvTst.exe TblDemo.exe TblTst.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+SrvTst.exe: SrvTst.dpr
+  $(DCC)
+
+CliTst.exe: CliTst.dpr
+  $(DCC)
+
+TblDemo.exe: TblDemo.dpr
+  $(DCC)
+
+SrvDemo.exe: SrvDemo.dpr
+  $(DCC)
+
+BufTst.exe: BufTst.dpr
+  $(DCC)
+
+ChatCli.exe: ChatCli.dpr
+  $(DCC)
+
+ChatSrv.exe: ChatSrv.dpr
+  $(DCC)
+
+BioLife.exe: BioLife.dpr
+  $(DCC)
+
+TblTst.exe: TblTst.dpr
+  $(DCC)
+
+IcsDel60.bpl: ..\VC32\IcsDel60.dpk
+  $(DCC)
+
+MwDel60.bpl: ..\VC32\MwDel60.dpk
+  $(DCC)
+
+

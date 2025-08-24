@@ -1,0 +1,26 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = SingleAppInstance60.bpl dclSingleAppInstance60.bpl SingleInstanceSample.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+dclSingleAppInstance60.bpl: dclSingleAppInstance.bpk
+  $(MAKE)
+
+SingleAppInstance60.bpl: SingleAppInstance.bpk
+  $(MAKE)
+
+SingleInstanceSample.exe: SingleInstanceSample.bpr
+  $(MAKE)
+
+

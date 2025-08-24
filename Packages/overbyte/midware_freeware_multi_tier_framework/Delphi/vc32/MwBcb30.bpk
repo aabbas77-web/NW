@@ -1,0 +1,199 @@
+# ---------------------------------------------------------------------------
+!if !$d(BCB)
+BCB = $(MAKEDIR)\..
+!endif
+
+# ---------------------------------------------------------------------------
+# IDE SECTION
+# ---------------------------------------------------------------------------
+# The following section of the project makefile is managed by the BCB IDE.
+# It is recommended to use the IDE to change any of the values in this
+# section.
+# ---------------------------------------------------------------------------
+
+VERSION = BCB.03
+# ---------------------------------------------------------------------------
+PROJECT = MwBcb30.bpl
+OBJFILES = ApsCli.obj RFormat.obj ApServer.obj MWDatSet.obj ApSrvCli.obj RBroker.obj \
+  MwBcb30.obj ..\..\cpp\MidWare\SObjSQL.obj ..\..\cpp\MidWare\SrvObj1.obj \
+  ..\..\cpp\MidWare\SObjThrd.obj
+RESFILES = MwBcb30.res ApsCli.dcr RFormat.dcr ApServer.dcr MWDatSet.dcr ApSrvCli.dcr \
+  RBroker.dcr
+DEFFILE =
+RESDEPEN = $(RESFILES)
+LIBFILES =
+LIBRARIES =
+SPARELIBS = VCL35.lib VCLDB35.lib IcsBcb30.lib VCLX35.lib
+PACKAGES = VCL35.bpi VCLDB35.bpi IcsBcb30.bpi VCLX35.bpi
+# ---------------------------------------------------------------------------
+PATHCPP = .;..\..\cpp\MidWare
+PATHASM = .;
+PATHPAS = .;
+PATHRC = .;
+DEBUGLIBPATH = $(BCB)\lib\debug
+RELEASELIBPATH = $(BCB)\lib\release
+# ---------------------------------------------------------------------------
+CFLAG1 = -Od -w -Ve -r- -k -y -v -vi- -c -b- -w-par -w-inl -Vx
+CFLAG2 = -DUSEPACKAGES \
+  -I"..\..\..\program files\borland\cbuilder3\projects";..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+CFLAG3 = -Tkh30000
+PFLAGS = -DUSEPACKAGES \
+  -U"..\..\..\program files\borland\cbuilder3\projects";..\vc32;..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -I"..\..\..\program files\borland\cbuilder3\projects";..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl \
+  -$Y -$W -$O- -v -JPHN -M
+RFLAGS = -DUSEPACKAGES \
+  -i"..\..\..\program files\borland\cbuilder3\projects";..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+AFLAGS = /i"..\..\..\program files\borland\cbuilder3\projects" /i..\..\cpp\midware \
+  /id:\fpiette\cpp\midware /id:\fpiette\delphi\vc32 /i$(BCB)\include \
+  /i$(BCB)\include\vcl /dUSEPACKAGES /mx /w2 /zd
+LFLAGS = -L"..\..\..\program files\borland\cbuilder3\projects";..\vc32;..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib;$(RELEASELIBPATH) \
+  -D"MidWare by F. Piette" -aa -Tpp -x -Gl -Gi -v
+IFLAGS =
+# ---------------------------------------------------------------------------
+ALLOBJ = c0pkg32.obj $(PACKAGES) sysinit.obj $(OBJFILES)
+ALLRES = $(RESFILES)
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+# ---------------------------------------------------------------------------
+!ifdef IDEOPTIONS
+
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=2060
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=8
+Item0=..\..\..\program files\borland\cbuilder3\projects;..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item2=d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item3=..\..\cpp\midware;..\..\..\delphi\vc32;..\midware;..\..\internet;$(BCB)\include;$(BCB)\include\vcl;d:\fpiette\delphi\vc32
+Item4=..\..\cpp\midware;..\..\..\delphi\vc32;..\midware;..\..\internet;$(BCB)\include;$(BCB)\include\vcl
+Item5=..\..\cpp\midware;..\midware;..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\include;$(BCB)\include\vcl
+Item7=..\..\internet;..;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=..\..\..\program files\borland\cbuilder3\projects;..\vc32;..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\vc32;..\..\cpp\midware;d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+Item2=d:\fpiette\cpp\midware;d:\fpiette\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\vc32;..\..\cpp\midware;..\..\..\delphi\vc32;..\midware;..\..\internet;$(BCB)\lib\obj;$(BCB)\lib
+Item4=..\..\cpp\midware;..\..\..\delphi\vc32;..\midware;..\..\internet;$(BCB)\lib\obj;$(BCB)\lib
+Item5=..\..\cpp\midware;..\midware;..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\..\internet;..;..\..\..\delphi\vc32;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=USEPACKAGES
+Item1=_RTLDLL
+Item2=_RTLDLL;USEPACKAGES
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+
+!endif
+
+# ---------------------------------------------------------------------------
+# MAKE SECTION
+# ---------------------------------------------------------------------------
+# This section of the project file is not used by the BCB IDE.  It is for
+# the benefit of building from the command-line using the MAKE utility.
+# ---------------------------------------------------------------------------
+
+.autodepend
+# ---------------------------------------------------------------------------
+!if !$d(BCC32)
+BCC32 = bcc32
+!endif
+
+!if !$d(DCC32)
+DCC32 = dcc32
+!endif
+
+!if !$d(TASM32)
+TASM32 = tasm32
+!endif
+
+!if !$d(LINKER)
+LINKER = ilink32
+!endif
+
+!if !$d(BRCC32)
+BRCC32 = brcc32
+!endif
+# ---------------------------------------------------------------------------
+!if $d(PATHCPP)
+.PATH.CPP = $(PATHCPP)
+.PATH.C   = $(PATHCPP)
+!endif
+
+!if $d(PATHPAS)
+.PATH.PAS = $(PATHPAS)
+!endif
+
+!if $d(PATHASM)
+.PATH.ASM = $(PATHASM)
+!endif
+
+!if $d(PATHRC)
+.PATH.RC  = $(PATHRC)
+!endif
+# ---------------------------------------------------------------------------
+$(PROJECT): $(OBJFILES) $(RESDEPEN) $(DEFFILE)
+    $(BCB)\BIN\$(LINKER) @&&!
+    $(LFLAGS) +
+    $(ALLOBJ), +
+    $(PROJECT),, +
+    $(ALLLIB), +
+    $(DEFFILE), +
+    $(ALLRES)
+!
+# ---------------------------------------------------------------------------
+.pas.hpp:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.pas.obj:
+    $(BCB)\BIN\$(DCC32) $(PFLAGS) {$< }
+
+.cpp.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) $(CFLAG2) $(CFLAG3) -n$(@D) {$< }
+
+.c.obj:
+    $(BCB)\BIN\$(BCC32) $(CFLAG1) $(CFLAG2) $(CFLAG3) -n$(@D) {$< }
+
+.asm.obj:
+    $(BCB)\BIN\$(TASM32) $(AFLAGS) $<, $@
+
+.rc.res:
+    $(BCB)\BIN\$(BRCC32) $(RFLAGS) -fo$@ $<
+# ---------------------------------------------------------------------------

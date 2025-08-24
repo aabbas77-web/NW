@@ -1,0 +1,56 @@
+package MwDel40;
+
+{$R *.RES}
+{$R 'ApServer.dcr'}
+{$R 'ApSrvCli.dcr'}
+{$R 'ApsCli.dcr'}
+{$R 'RBroker.dcr'}
+{$R 'RFormat.dcr'}
+{$R 'MWDatSet.dcr'}
+{$R 'TrackDS.dcr'}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'MidWare (Middleware by F. Piette)'}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl40,
+  VCLDB40,
+  IcsDel40,
+  VCLX40;
+
+contains
+  ApServer in 'ApServer.pas',
+  ApSrvCli in 'ApSrvCli.pas',
+  ApsCli in 'ApsCli.pas',
+  RBroker in 'RBroker.pas',
+  RFormat in 'RFormat.pas',
+  PrmProp in 'PrmProp.pas' {RequestParamsEditForm},
+  LOPropIm in 'LOPropIm.pas' {ImportForm},
+  MWDatSet in 'MWDatSet.pas',
+  TrackDS in 'TrackDS.pas',
+  LOProp in 'LOProp.pas' {LayoutEditForm},
+  SrvObj1 in '..\MidWare\SrvObj1.pas',
+  SObjThrd in '..\MidWare\SObjThrd.pas',
+  SObjSQL in '..\MidWare\SObjSQL.pas';
+
+end.

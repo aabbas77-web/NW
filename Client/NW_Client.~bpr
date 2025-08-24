@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="NW_Client.exe"/>
+    <OBJFILES value="NW_Client.obj DataModule.obj Main.obj ClientProcess.obj ..\Lib\Input.obj 
+      ..\Lib\nw_CaptureThread.obj ..\Lib\nw_RLE.obj ..\Lib\TempExplorer.obj 
+      ..\Lib\nw_CopyThread.obj ..\Lib\CopyDialog.obj ..\Lib\FullScreen.obj 
+      ..\Lib\nw_Compression.obj ..\Lib\About.obj Watch.obj ..\Lib\Splash.obj 
+      Options.obj ..\Lib\nw_Messages.obj ..\Lib\nw_Message.obj 
+      ..\Lib\nw_SelectClient.obj"/>
+    <RESFILES value="NW_Client.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) DataModule.dfm Main.dfm ClientProcess.dfm ..\Lib\Input.dfm 
+      ..\Lib\TempExplorer.dfm ..\Lib\CopyDialog.dfm ..\Lib\FullScreen.dfm 
+      ..\Lib\About.dfm Watch.dfm ..\Lib\Splash.dfm Options.dfm 
+      ..\Lib\nw_Messages.dfm ..\Lib\nw_Message.dfm ..\Lib\nw_SelectClient.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="FormTranslation6.lib ACM6PK.lib qrpt.lib dsnapcon.lib xmlrtl.lib 
+      inetdb.lib webdsnap.lib inet.lib FormTranslationPk.lib bcbshlctrls.lib 
+      IcsBcb60.lib MwBcb60.lib dsnap.lib adortl.lib bcb2kaxserver.lib tee.lib 
+      teedb.lib vclx.lib bcbsmp.lib vcldb.lib bdertl.lib dbrtl.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib dbrtl.lib bdertl.lib vcldb.lib bcbsmp.lib vclx.lib 
+      teedb.lib tee.lib bcb2kaxserver.lib adortl.lib dsnap.lib MwBcb60.lib 
+      IcsBcb60.lib bcbshlctrls.lib FormTranslationPk.lib inet.lib webdsnap.lib 
+      inetdb.lib xmlrtl.lib dsnapcon.lib qrpt.lib ACM6PK.lib FormTranslation6.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib;..\Lib"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="NW_Client.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;&quot;E:\Ali\Library\Packages\ACM distribuce\ACMDialog&quot;;&quot;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn&quot;;&quot;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut&quot;;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Packages\ShellControls;&quot;..\Packages\ACM distribuce\ACMDialog&quot;;&quot;..\Packages\ACM distribuce\ACMWaveIn&quot;;&quot;..\Packages\ACM distribuce\ACMWaveOut&quot;;F:\GitHub\NetWatcher\NW\Packages\TFormStateSaver"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\Net\Ali\Library\Packages\TFormTranslation"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;..\Packages\TFormStateSaver 
+      -ID:\Ali\Components\Translation\TFormTranslator 
+      -I&quot;D:\Program Files\Borland\CBuilder6\Projects&quot; -I..\Lib -I$(BCB)\include 
+      -I$(BCB)\include\vcl 
+      -IE:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32 
+      -IE:\Ali\Library\Packages\ShellControls 
+      -I&quot;E:\Ali\Library\Packages\ACM distribuce\ACMDialog&quot; 
+      -I&quot;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn&quot; 
+      -I&quot;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut&quot; 
+      -I..\Packages\TFormTranslation 
+      -IE:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32 
+      -I..\Packages\ShellControls -I&quot;..\Packages\ACM distribuce\ACMDialog&quot; 
+      -I&quot;..\Packages\ACM distribuce\ACMWaveIn&quot; 
+      -I&quot;..\Packages\ACM distribuce\ACMWaveOut&quot; 
+      -IF:\GitHub\NetWatcher\NW\Packages\TFormStateSaver -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="NW_Client.res" FORMNAME="" UNITNAME="NW_Client.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="NW_Client.cpp" FORMNAME="" UNITNAME="NW_Client" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DataModule.cpp" FORMNAME="DM" UNITNAME="DataModule" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="FormMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ClientProcess.cpp" FORMNAME="DMClient" UNITNAME="ClientProcess" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\Input.cpp" FORMNAME="FormInput" UNITNAME="Input" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_CaptureThread.cpp" FORMNAME="" UNITNAME="nw_CaptureThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_RLE.cpp" FORMNAME="" UNITNAME="nw_RLE" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\TempExplorer.cpp" FORMNAME="FormTempExplorer" UNITNAME="TempExplorer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_CopyThread.cpp" FORMNAME="" UNITNAME="nw_CopyThread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\CopyDialog.cpp" FORMNAME="FormCopyDialog" UNITNAME="CopyDialog" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\FullScreen.cpp" FORMNAME="FormFullScreen" UNITNAME="FullScreen" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Compression.cpp" FORMNAME="" UNITNAME="nw_Compression" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\About.cpp" FORMNAME="FormAbout" UNITNAME="About" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Watch.cpp" FORMNAME="FormWatch" UNITNAME="Watch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\Splash.cpp" FORMNAME="FormSplash" UNITNAME="Splash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Options.cpp" FORMNAME="FormOptions" UNITNAME="Options" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Messages.cpp" FORMNAME="FormMessages" UNITNAME="nw_Messages" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_Message.cpp" FORMNAME="FormMessage" UNITNAME="nw_Message" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\Lib\nw_SelectClient.cpp" FORMNAME="FormSelectClient" UNITNAME="nw_SelectClient" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=23
+Item0=&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Packages\ShellControls;..\Packages\ACM distribuce\ACMDialog;..\Packages\ACM distribuce\ACMWaveIn;..\Packages\ACM distribuce\ACMWaveOut;F:\GitHub\NetWatcher\NW\Packages\TFormStateSaver
+Item1=&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Packages\ShellControls;..\Packages\ACM distribuce\ACMDialog;..\Packages\ACM distribuce\ACMWaveIn;..\Packages\ACM distribuce\ACMWaveOut
+Item2=C:\Program Files\Borland\CBuilder6\Projects;\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Packages\ShellControls;..\Packages\ACM distribuce\ACMDialog;..\Packages\ACM distribuce\ACMWaveIn;..\Packages\ACM distribuce\ACMWaveOut
+Item3=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Packages\ShellControls;..\Packages\ACM distribuce\ACMDialog;..\Packages\ACM distribuce\ACMWaveIn;..\Packages\ACM distribuce\ACMWaveOut
+Item4=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;..\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Net\Ali\Library\Packages\ShellControls;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveOut
+Item5=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;E:\Ali\Net\Ali\Library\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Net\Ali\Library\Packages\ShellControls;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveOut
+Item6=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;E:\Ali\Net\Ali\Library\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Net\Ali\Library\Packages\ShellControls;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Net\Ali\Library\Packages\ACM distribuce\ACMWaveOut;E:\Ali\Net\Ali\Library\Packages\TFormStateSaver
+Item7=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut;E:\Ali\Net\Ali\Library\Packages\TFormTranslation
+Item8=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut
+Item9=..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut
+Item10=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls;E:\Ali\Library\Packages\ACM distribuce\ACMDialog;E:\Ali\Library\Packages\ACM distribuce\ACMWaveIn;E:\Ali\Library\Packages\ACM distribuce\ACMWaveOut
+Item11=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls
+Item12=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls
+Item13=D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;E:\Ali\Library\Packages\ShellControls
+Item14=D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl;E:\Ali\Library\Packages\overbyte\midware_freeware_multi_tier_framework\delphi\vc32
+Item15=D:\Program Files\Borland\CBuilder6\Projects;..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl
+Item16=..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\include;$(BCB)\include\vcl
+Item17=..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item18=..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item19=..\Lib;$(BCB)\LIB\lmd50\MAIN;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item20=$(BCB)\LIB\lmd50\MAIN;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\include;$(BCB)\include\vcl
+Item21=$(BCB)\LIB\lmd50\MAIN;..\..\LTR TreeView;E:\Ali\NW\Source;Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\MultiLanguage;..;Test;$(BCB)\include;$(BCB)\include\vcl
+Item22=Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\MultiLanguage;..;Test;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=16
+Item0=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\Net\Ali\Library\Packages\TFormTranslation
+Item1=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;E:\Ali\Net\Ali\Library\Packages\TFormTranslation;E:\Ali\Net\Ali\Library\Packages\TFormStateSaver
+Item2=C:\Program Files\Borland\CBuilder6\Projects;..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=..\..\..\Packages\TFormStateSaver;D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item5=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\Lib;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;
+Item6=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=D:\Ali\Components\Translation\TFormTranslator;D:\Program Files\Borland\CBuilder6\Projects;..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\Program Files\Borland\CBuilder6\Projects;..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\..\ShellControls;..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item11=..\..\overbyte\midware_freeware_multi_tier_framework\delphi\vc32;..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item12=..\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item13=$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;E:\Ali\NW\Source;D:\Program Files\Borland\CBuilder6\Projects;..;$(BCB)\lib\obj;$(BCB)\lib
+Item14=$(BCB)\LIB\lmd50\MAIN;$(BCB)\Projects\Lib;..\..\LTR TreeView;E:\Ali\NW\Source;Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\MultiLanguage;..;Test;$(BCB)\lib\obj;$(BCB)\lib
+Item15=Lib;D:\Program Files\Borland\CBuilder6\Projects;D:\Ali\MultiLanguage;..;Test;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

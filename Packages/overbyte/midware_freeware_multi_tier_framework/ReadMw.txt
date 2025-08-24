@@ -1,0 +1,327 @@
+MidWare
+=======
+(AKA Middleware by F. Piette)
+
+Last update: January 13, 2002
+http://www.overbyte.be
+
+Legal issues: 
+-------------
+              Copyright (C) 1998 - 2002 by François PIETTE 
+              Rue de Grady 24, 4053 Embourg, Belgium. Fax: +32-4-365.74.56
+              <francois.piette@overbyte.be>
+
+              This software is provided 'as-is', without any express or
+              implied warranty. In no event will the author be held liable
+              for any damages arising from the use of this software.
+
+              Permission is granted to anyone to use this software and or any
+              derived or altered versions for any purpose, excluding commercial
+              applications. You may distribute it freely untouched.
+              The following restrictions applies:
+
+              1. The origin of this software must not be misrepresented, you
+                 must not claim that you wrote the original software.
+
+              2. If you use this software in a product, an acknowledgment in
+                 the product documentation and displayed on screen is required.
+                 The text must be: "This product is based on MidWare. Freeware
+                 source code is available at http://www.overbyte.be."
+
+              3. Altered source versions must be plainly marked as such, and
+                 must not be misrepresented as being the original software.
+
+              4. This notice may not be removed or altered from any source
+                 distribution and must be added to the product documentation.
+
+Disclaimer
+----------
+THIS SOFTWARE IS PROVIDED BY FRANCOIS PIETTE "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR 
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, 
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE.
+
+
+Register
+--------
+
+MidWare is freeware, restrictions applies: see leagl issues above. 
+If you like the components and use it, you must send a picture postcard 
+showing the area you lives in and some beautiful stamps for my daughter 
+who is stamp collectors. Do not use an envelop, I collect USED 
+postcards mailed to me.
+
+Address your card to: Francois PIETTE, rue de Grady 24, 4053 Embourg, 
+Belgium Don't forget to mention your name, address and EMail and why you 
+sent the postcard.
+
+Documentation:
+--------------
+See included MidWare.hlp file.
+
+
+Installation:
+-------------
+
+The zip file has subdirectories in it. You must use the pkunzip -d option
+to restore this directory tree or you will have problems because the files 
+will not be in their proper subdirectories.
+
+Install all components from the delpi\vc32 directory.
+As a rule, the component are the files which have a Register procedure. Other 
+files are support files used by components
+
+In delphi\vc32 directory, you can find pre-built packages sources:
+- MwDel30.dpk for Delphi 3
+- MwDel40.dpk for Delphi 4
+- MwDel50.dpk for Delphi 5
+- MwDel60.dpk for Delphi 6
+- MwBcb30.bpk for C++ Builder 3
+- MwBcb40.bpk for C++ Builder 4
+- MwBcb50.bpk for C++ Builder 5
+- MwBcb60.bpk for C++ Builder 6
+To install it, do file/open then browse to the dpk or bpk file and open it. 
+Click on the 'install' icon. After a few seconds, you should see the 
+MidWare tab on your component gallery. 
+
+The MidWare packages depends on the ICS package. If you don't have
+ICS installed, you can either install it or add WSocket.pas, WSockBuf.pas 
+to MidWare package and remove ICS from the required packages. All ICS files 
+needed by MidWare are in MidWare.zip. If you use both packages, be sure to
+always use latest versions either from MidWare.zip or ICS.zip. ICS packages
+are IcsDel30.dpk (Delphi 3), IcsDel40.dpk (Delphi 4), IcsDel50.dpk 
+(Delphi 5), IcsDel60.dpk (Delphi 6), IcsBcb30.bpk (BCB 3), IcsBcb40.bpk (BCB 4),
+IcsBcb40.bpk (BCB 5) and IcsBcb60.bpk (BCB 6).
+
+You can also create your own packages: MidWare component are just ordinary
+components and you have full source code (Object Pascal). Just a hint for
+BCB: as it is Object Pascal, you have to select *.pas when browsing for
+sources files.
+
+With BCB, you may also encounter an error while building the packages or
+sample applications: Some libs not found. If this happend, you may safely
+remove any reference to those libs (Edit project source and remove any
+reference).
+
+When opening a project or package, you may have an error stating that
+OldCreateOrder or other properties doesn't exists. You can safely ignore 
+that error. It happends because you use an old compiler version which 
+doesn't support that property. Don't worry: none of the programs or 
+components use it. So you can really ignore it (but do not ignore other 
+errors !). To avoid this error at runtime, you have to open ALL forms at
+design time and ignore the error. This include forms use by components.
+
+Sample applications:
+--------------------
+
+SRVTST      A sample application server with 3 server object
+            - UPPER         Just return sent data in uppercase
+            - THREAD        Show how to use a thread to make a lengthy request
+            - GETCLIENT     Show how to use a TTable and fetch some data
+            - GETCLIENTLIKE Show how to use a TQuery and fetch some data
+            - GETFILE       Return an entire file as a blob field
+CLITST      A sample client program to be used with SRVTST
+            (can display BMP files !)
+TBLTST      A sample client program using a DBGrid and DBNavigator
+            Use it with SRVTST (it uses GETCLIENTLIKE). 
+BUFTST      A sample program to show how you can manipulate TMWBuffer
+CHATSRV     A multi-user chat server
+CHATCLI     A client for CHATSRV
+SRVDEMO     Another server
+            - SQL           Execute a SQL statement (BETA)
+            - SQLTHRD       Execute a SQL statement in athread (BETA, buggy)
+BIOLIFE     A sample client application showing how to use images.
+
+
+By default, SrvTst and CliTst use port TCP/2106 and works on localhost. You can
+change that by running the programs once, closing them and editing the
+created ini files with what you like most.
+
+ChatSrv and ChatCli use port 2121 (client to server) and 2122 (server to client).
+You need to edit source code to change that.
+
+Sample applications are in separate directory for BCB3, BCB4 and Delphi:
+- Delphi\Midware\MwDel60.bpg    Project Group for Delphi 6
+- Delphi\Midware\MwDel50.bpg    Project Group for Delphi 5
+- Delphi\Midware\MwDel40.bpg    Project Group for Delphi 4
+- cpp\midware\bcb4\MwBcb60.bpg  Project Group for BCB 6
+- cpp\midware\bcb4\MwBcb50.bpg  Project Group for BCB 5
+- cpp\midware\bcb4\MwBcb40.bpg  Project Group for BCB 4
+- cpp\midware\bcb3\MwBcb30.bpg  Project Group for BCB 3
+
+
+A little bit of theory:
+-----------------------
+MidWare is made to be the glue between you thin client and you application
+server. The application server is connected to dataserver (RDBMS for
+example, or mainframe or datawarehouse) to get/update the data base. The
+application server use standard (or third party) two-tier C/S objects such
+as TQuery or any BDE replacement component.
+
+
++--------+---------+
+|  THIN  |         |
+|        | MIDWARE |<---+
+|CLIENT 1|         |    |
++--------+---------+    |
+                        |
++--------+---------+    |    +---------+-----------+-----+       +---------+
+|  THIN  |         |    |    |         |APPLICATION|     |       |         |
+|        | MIDWARE |<-TCPIP->| MIDWARE |           | BDE |<----->|  RDMBS  |
+|CLIENT 2|  (CLI)  |    |    |  (SRV)  |   SERVER  |     |       |         |
++--------+---------+    |    +---------+-----------+-----+       +---------+
+                        |                    ^
++--------+---------+    |                    |                   +---------+
+|  THIN  |         |    |                    |                   |         |
+|        | MIDWARE |<---+                    +------------------>|MAINFRAME|
+|CLIENT 3|         |                                             |         |
++--------+---------+                                             +---------+
+
+The thin client is responsible for data entry and data presentation. The
+application server is responsible for the business rules (data validation
+and data retrieval). The RDBMS or MAINFRAME (or Unix box or other
+application servers for N-Tiers)
+
+I the classical data invoincing system, the thin client will present a
+window to select a client, the user select the client in the list. Then
+another windows allows to select items to add to the invoice. The user pick
+an item, add quantity and other informations, then the thin client send the
+info the the application server for validation before the next item entry.
+(or you prefer to enter all items and verify them all in once).
+
+A client list will be presented, probably in a TMWTable filled with all
+client conforming to a key entered by the user (for example the first few
+letters of the client name). The thin client send the key to the app server
+which returns the client list. The user see the list in any dataaware
+control.
+
+To validate items, the thin client send the items data to the app server
+which apply the business rules to validate and send positive acknowledge or
+negative aknowledge with error message.
+
+You are not onliged to use TMWTable. You can use TMWBuffer directly to
+populate and data entry controls.
+
+
+
+Support:
+--------
+There is a mailing list to discuss Midware. To subscribe send an EMail at 
+majordomo@rtfm.be without subject line and with "subscribe midware" in the 
+message body (without the quotes). You'll receive an autorization
+message you have to reply. Then you'll receive an acknowledgement and 
+instructions to unsubscribe. Once you have been registered with the mailing 
+list processor, you can send messages to midware@rtfm.be. Every subscriber 
+will receive a copy of your message. I will respond, but anybody is welcome
+to respond to each other's messages. So every body can share his expertize.
+
+Before asking a question, browse the message digest you can download from
+the support page on the website (follow "support" link from main page).
+
+If you find a bug, please make a short program which reproduce the problem 
+attach it to a message addresed to me or to the mailing list. If I can
+reproduce the problem, I can find a fix !
+
+You are also encouraged to use the support mailing list to ask for enhancements. 
+You are welcome to post your own code.
+
+The support mailing list has an heavy traffic: 20 to 40 messages each day. If
+it is too much for you, you can subscribe to another mailing list called
+twsocket-announce which will receive only very few messages when major bug
+fixes or updates are done. The subscription process is the same as for the other
+mailing list. See above procedure.
+
+
+What's new:
+-----------
+Jan 13, 2002
+   - Update for BCB 6
+Nov 15, 2001
+   - Metadata transport
+May 6, 2001
+   - Update for Delphi 6
+Oct 3, 1999
+   - Update for Delphi 5
+Aug 20, 1999
+   - Corrected a bug in TMWBuffer.WriteFields for BCB. There was a problem with
+     null strings (actually it is a bug in BCB implementation for AnsiStrings
+     passed to ARRAYOFCONST.
+   - Update for BCB4 
+Jun 06, 1999
+   - Corrected a few bugs in rbroker and rformat sources
+   - Added help file (still under construction)
+Sep 10, 1998
+   - Corrected a few bugs in TMWDataSet
+   - Added new features to TMWBuffer. For example a Sort method.
+   - A new sample program BioLife showing how to use images.
+   - See comments in source file for more info about the update.
+Jul 13, 1998
+   - Corrected a bug in ApSrvCli which prevented to compile with BCB.
+   - Added some functionnalities to TMWTable to allow easy component
+     descendent.
+Jul 12, 1998
+   - Implemented SaveToStream, SaveToFile, LoadFromStream and LoadFromFile
+     in TMWBuffer.
+Jul 11, 1998
+   - Implemented ftMemo, ftCurrency, ftDate, ftTime field types in TMWTable.
+Jul 08, 1998
+   - Adapted to Delphi 4
+   - Made TServerObject a TComponent to be able to see it in the component
+     gallery and drop it on the forms.
+   - Added TField support in TMWBuffer.WriteFields (and other similars).
+   - Created TServerObjectSQl et TServerObjectSQLTHRD to execute client
+     generated SQL statement (It's a remote 2-tier and not really 3-tier,
+     but who care ?).
+June 28, 1998
+   - Modified TMWTable to make is able to populate dataware controls at
+     design time. New properties AppSrvClient, Timeout, FunctionCode and
+     Params to specify the request at design time.
+     The sample program TblTst show the use of this new functionnality.
+     Run the SrvTst server before loading the project and set MWTable.Active
+     to true to enjoy data at design time !
+   - A property editor for the Params property.
+June 21, 1998
+   - Added field type support in TMWTable.
+   - Adapted MidWare for C++ Builder V3. 
+   - All sample programs converted to C++.
+June 19, 1998
+   - Added ChatSrv and ChatCli demo programs to show how a server can send
+     info to the client without being called by the client. Also show how
+     to make several TServerObject collaborate.
+June 10, 1998
+   - Added support for encryption/compression of data exchanged between the
+     client and the server (both directions).
+June 02, 1998
+   - Added a property editor for field layout.
+May 16, 1998
+   - TMWTable bugs corrected: Field concatenation and missing scroll bar when
+     used with a TDBGrid.
+April 24, 1998
+   - Added BLOB support in TMWBuffer and in demo programs.
+     (in the demo, use the GETFILE function code and fphead.bmp as data, or
+     GETFILE and SrvTst1.pas). The TblTst and TMWTable has not [yet] been
+     updated to support blob fields.
+   - Client and server writen with previous version are not compatibles
+     because a new delimiter has bee added to serve as escaping mechanism
+     to support blob fields. Just recompile your clients and servers and 
+     they will work as before and with the new feature as well.
+March 20, 1998
+   - TRequestBuffer has been changed to TMWBuffer. It work now like a TTable.
+     A new feature (AutoExpand) has been implemented. Now, there is no need
+     to know in advance the buffer size. It will grow as needed.
+   - A new component TMWTable is very powerful. It make TMWBuffer looks like
+     a TTable. You can then use it with all DBxxx standard component. The new
+     sample program TblTst show how to use it with a DBGrid. This sample is
+     really incredibly small and yet powerful.
+
+
+francois.piette@overbyte.be
+francois.piette@rtfm.be
+http://www.overbyte.be
